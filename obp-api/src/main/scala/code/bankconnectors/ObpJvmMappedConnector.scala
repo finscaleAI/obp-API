@@ -73,9 +73,9 @@ object ObpJvmMappedConnector extends Connector with MdcLoggable {
 
   try {
     if (getClass.getResourceAsStream(propsFile) == null)
-      propsFile = "/props/default.props"
+      propsFile = "/default.props"
   } catch {
-    case e: Throwable => propsFile = "/props/default.props"
+    case e: Throwable => propsFile = "/default.props"
   }
 
   val cfg: Configuration = new SimpleConfiguration(

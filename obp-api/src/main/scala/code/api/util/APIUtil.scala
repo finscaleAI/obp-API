@@ -2504,12 +2504,12 @@ Returns a string showed to the developer
     Jvalue
   }
 
-  //This method will read sample.props.template file, and get all the fields which start with the webui_
+  //This method will read default.props file, and get all the fields which start with the webui_
   //it will return the webui_ props paris: 
   //eg: List(("webui_get_started_text","Get started building your application using this sandbox now"),
   // ("webui_post_consumer_registration_more_info_text"," Please tell us more your Application and / or Startup using this link"))
   def getWebUIPropsPairs: List[(String, String)] = {
-    val filepath = this.getClass.getResource("/props/sample.props.template").getPath
+    val filepath = this.getClass.getResource("/props/default.props").getPath
     val bufferedSource: BufferedSource = scala.io.Source.fromFile(filepath)
 
     val proPairs: List[(String, String)] = for{

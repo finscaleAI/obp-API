@@ -53,8 +53,8 @@ header #logo-right {
 }
 
 #logo-left-xs {
-    max-width: 50%;
-    min-width: 50%;
+    max-width: 20%;
+    min-width: 33%;
     vertical-align: baseline;
     padding:3%;
     padding-left: 10%;

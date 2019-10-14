@@ -153,7 +153,7 @@ package code.model.dataAccess {
           //TODO: Revise those dummy values
           val accountType = "AMPQ"
           val accountLabel = message.accountNumber
-          val currency = "EUR"
+          val currency = "INR"
 
           val foundUser  = Users.users.vend.getUserByProviderId(message.accountOwnerProvider, message.accountOwnerId)
           val result = for {

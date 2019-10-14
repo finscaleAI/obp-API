@@ -21,7 +21,7 @@ trait KafkaSetup extends FeatureSpec with EmbeddedKafka with KafkaHelper
 
 
   implicit val formats = CustomJsonFormats.formats
-  implicit val config = EmbeddedKafkaConfig(kafkaPort = 9092, zooKeeperPort = 2181) //TODO the port should read from test.default.props, but fail
+  implicit val config = EmbeddedKafkaConfig(kafkaPort = 9092, zooKeeperPort = 2181) //TODO the port should read from default.props, but fail
   implicit val stringSerializer = new StringSerializer
   implicit val stringDeserializer = new StringDeserializer
 
